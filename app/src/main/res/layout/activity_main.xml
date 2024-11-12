@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#CBD3D1"
+    android:padding="24dp">
+
+    <!-- Título do Jogo -->
+
+    <!-- Subtítulo: Selecione a jogada -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cara ou Coroa"
+        android:textColor="#4E7366"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione a jogada"
+        android:textSize="18sp"
+        android:textColor="#4E7366"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RadioGroup para escolher Cara ou Coroa, sem fundo e com espaçamento entre os itens -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioCara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara"
+            android:textColor="#4E7366"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioCoroa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coroa"
+            android:textColor="#4E7366" />
+    </RadioGroup>
+
+    <!-- Botão para iniciar o jogo -->
+    <Button
+        android:id="@+id/buttonJogar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Jogar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4E7366"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <!-- Botão para mostrar o resultado -->
+    <Button
+        android:id="@+id/textResultado"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4E7366"
+        android:text="Resultado"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>
